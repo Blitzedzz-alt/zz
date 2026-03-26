@@ -11,7 +11,7 @@
 
 (function () {
   'use strict';
-
+// yes this script is skidded i dont fucking care
   const LOG  = (...a) => console.log('[LineDB]', ...a);
   const WARN = (...a) => console.warn('[LineDB]', ...a);
   const ERR  = (...a) => console.error('[LineDB]', ...a);
@@ -186,12 +186,12 @@
     .catch(err => {
       ERR('boot failed:', err.message);
       badge.style.color = badge.style.borderColor = '#ff5555';
-      badge.textContent = `Line DB: ${err.message}`;
+      badge.textContent = `Line DB: ${err.message} | Made by Blitzedzz@udgang`;
     });
 
   // ── Badge ─────────────────────────────────────────────────────────────
   const badge = Object.assign(document.createElement('div'), {
-    textContent: 'Line DB: loading…',
+    textContent: 'Line DB: loading… | Made by Blitzedzz@udgang',
   });
   Object.assign(badge.style, {
     position: 'fixed', bottom: '12px', right: '12px',
